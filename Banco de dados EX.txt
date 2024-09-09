@@ -1,0 +1,31 @@
+create table usuarios
+(
+  cpf integer,
+  nome varchar(50),
+  sobrenome varchar (50),
+  cargo varchar (50),
+  curso_id integer
+);
+
+create table cursos
+(
+  id integer,
+  nome_curso varchar (50),
+  professor varchar (50),
+  categoria varchar (50)
+);
+
+insert into	usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values('123', 'Pedro', 'Brocaldi', 'Professor', '1');
+
+insert into	usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values('1234', 'Lucas', 'Schmitt', 'Aluno', '1');
+
+insert into	usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values('12345', 'Yuri', 'Schmitt', 'Aluno', '1');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('1', 'Ti do Zero', 'Pedro Brocaldi', 'Programação');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('2', 'SQL', 'Carlos', 'Dados');
